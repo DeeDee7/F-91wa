@@ -2095,6 +2095,182 @@ type 0207, grid 10 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="LinnesLab-Sensors">
+<packages>
+<package name="LSM6DS3_CAST">
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+<smd name="2" x="-2.54" y="-1.27" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="4" x="2.54" y="1.27" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="3" x="2.54" y="-1.27" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="1" x="-2.54" y="1.27" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<text x="-2.54" y="3.175" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.54" y="-4.445" size="1.27" layer="27">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LSM6DS3_CAST">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="GND" x="-12.7" y="2.54" length="middle"/>
+<pin name="VCC" x="-12.7" y="-2.54" length="middle"/>
+<pin name="SDA" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LSM6DS3_CAST">
+<gates>
+<gate name="G$1" symbol="LSM6DS3_CAST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LSM6DS3_CAST">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="LinnesLab-Microcontrollers">
+<packages>
+<package name="ARTEMIS_CAST">
+<smd name="1" x="0" y="18.034" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="2" x="0" y="16.2306" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="3" x="0" y="14.4272" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="4" x="0" y="12.6238" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="5" x="0" y="10.8204" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="6" x="0" y="9.017" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="7" x="0" y="7.2136" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="8" x="0" y="5.4102" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="9" x="0" y="3.6068" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="10" x="0" y="1.8034" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R270"/>
+<smd name="11" x="0" y="0" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="19" x="14.224" y="0" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="20" x="14.224" y="1.8034" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="21" x="14.224" y="3.6068" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="22" x="14.224" y="5.4102" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="23" x="14.224" y="7.2136" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="24" x="14.224" y="9.017" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="25" x="14.224" y="10.8204" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="26" x="14.224" y="12.6238" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="27" x="14.224" y="14.4272" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="28" x="14.224" y="16.2306" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="29" x="14.224" y="18.034" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="12" x="1.7018" y="0" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="18" x="12.5222" y="0" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="13" x="3.5052" y="0" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="14" x="5.3086" y="0" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="15" x="7.112" y="0" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="16" x="8.9154" y="0" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="17" x="10.7188" y="0" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<wire x1="0" y1="0" x2="14.224" y2="0" width="0.127" layer="21"/>
+<wire x1="14.224" y1="0" x2="14.224" y2="19.05" width="0.127" layer="21"/>
+<wire x1="14.224" y1="19.05" x2="0" y2="19.05" width="0.127" layer="21"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="0" y="20.32" size="1.27" layer="25">&gt;Name</text>
+<text x="0" y="-2.54" size="1.27" layer="27">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ARTEMIS_CAST">
+<description>Footprint is comprised of 0.027" PTH (used with ECT's P2662-1C pogopin) positioned to contact all the SMD pads of the Artemis v10 module.</description>
+<wire x1="-30.48" y1="40.64" x2="33.02" y2="40.64" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="40.64" x2="33.02" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="-45.72" x2="-30.48" y2="-45.72" width="0.1524" layer="94"/>
+<wire x1="-30.48" y1="-45.72" x2="-30.48" y2="40.64" width="0.1524" layer="94"/>
+<pin name="VDD*2" x="-33.02" y="38.1" visible="pin" length="short"/>
+<pin name="GND*6" x="-33.02" y="-43.18" visible="pin" length="short"/>
+<pin name="~D48(TX0/SCL5/SCK5)" x="-33.02" y="20.32" visible="pin" length="short"/>
+<pin name="~D49(RX0/SDA5/MISO5)" x="-33.02" y="17.78" visible="pin" length="short"/>
+<pin name="!RST" x="-33.02" y="33.02" visible="pin" length="short"/>
+<pin name="~BOOT(MOSI5/RX1/32KHZ)" x="-33.02" y="27.94" visible="pin" length="short"/>
+<pin name="~AD11(PDMDATA)" x="-33.02" y="-7.62" visible="pin" length="short"/>
+<pin name="~AD12(PDMCLK/TX1)" x="-33.02" y="-10.16" visible="pin" length="short"/>
+<pin name="~AD13(I2SBCLK/RX1)" x="-33.02" y="-12.7" visible="pin" length="short"/>
+<pin name="AD16(TRIG0/SCCRST)" x="-33.02" y="-15.24" visible="pin" length="short"/>
+<pin name="~AD29(PDMDATA)" x="-33.02" y="-17.78" visible="pin" length="short"/>
+<pin name="~AD31(SCCCLK)" x="-33.02" y="-20.32" visible="pin" length="short"/>
+<pin name="~AD32(SCCIO)" x="-33.02" y="-22.86" visible="pin" length="short"/>
+<pin name="~AD35(TX1/I2SDAT/PDMCLK)" x="-33.02" y="-30.48" visible="pin" length="short"/>
+<pin name="(SCL0/SCK0)~D5" x="35.56" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="(SDA0/MISO0/I2SDAT)~D6" x="35.56" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="(MOSI0/CLKOUT)~D7" x="35.56" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="(CMPIN1/SCCIO)~D18" x="35.56" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="(CMPRF0/SCCCLK/I2SBCLK)~D19" x="35.56" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="(PDMCLK/SWO)~D22" x="35.56" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="(I2SWCLK/CMPOUT)~D23" x="35.56" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="(TX1/32KHZ/SWO)~D24" x="35.56" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="(SDA2/MISO2/RX1)~D25" x="35.56" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="(SCL4/SCK4/TX1)~D39" x="35.56" y="-27.94" visible="pin" length="short" rot="R180"/>
+<pin name="(SDA4/MISO4/RX1)D40" x="35.56" y="-30.48" visible="pin" length="short" rot="R180"/>
+<pin name="(SCL3/SCK3/TX1)~D42" x="35.56" y="-35.56" visible="pin" length="short" rot="R180"/>
+<pin name="(SDA3/MISO3/RX1)~D43" x="35.56" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="(MOSI4)~D44" x="35.56" y="-40.64" visible="pin" length="short" rot="R180"/>
+<pin name="(SWO/I2SDAT/PDMDATA)~D45" x="35.56" y="-43.18" visible="pin" length="short" rot="R180"/>
+<text x="-30.48" y="41.148" size="1.778" layer="95">&gt;Name</text>
+<text x="-30.48" y="-48.26" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ARTEMIS.CAST" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="ARTEMIS_CAST" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="ARTEMIS_CAST">
+<connects>
+<connect gate="G$1" pin="!RST" pad="25"/>
+<connect gate="G$1" pin="(CMPIN1/SCCIO)~D18" pad="21"/>
+<connect gate="G$1" pin="(CMPRF0/SCCCLK/I2SBCLK)~D19" pad="20"/>
+<connect gate="G$1" pin="(I2SWCLK/CMPOUT)~D23" pad="11"/>
+<connect gate="G$1" pin="(MOSI0/CLKOUT)~D7" pad="7"/>
+<connect gate="G$1" pin="(MOSI4)~D44" pad="28"/>
+<connect gate="G$1" pin="(PDMCLK/SWO)~D22" pad="10"/>
+<connect gate="G$1" pin="(SCL0/SCK0)~D5" pad="6"/>
+<connect gate="G$1" pin="(SCL3/SCK3/TX1)~D42" pad="27"/>
+<connect gate="G$1" pin="(SCL4/SCK4/TX1)~D39" pad="2"/>
+<connect gate="G$1" pin="(SDA0/MISO0/I2SDAT)~D6" pad="12"/>
+<connect gate="G$1" pin="(SDA2/MISO2/RX1)~D25" pad="14"/>
+<connect gate="G$1" pin="(SDA3/MISO3/RX1)~D43" pad="26"/>
+<connect gate="G$1" pin="(SDA4/MISO4/RX1)D40" pad="3"/>
+<connect gate="G$1" pin="(SWO/I2SDAT/PDMDATA)~D45" pad="24"/>
+<connect gate="G$1" pin="(TX1/32KHZ/SWO)~D24" pad="9"/>
+<connect gate="G$1" pin="AD16(TRIG0/SCCRST)" pad="22"/>
+<connect gate="G$1" pin="GND*6" pad="29"/>
+<connect gate="G$1" pin="VDD*2" pad="17"/>
+<connect gate="G$1" pin="~AD11(PDMDATA)" pad="19"/>
+<connect gate="G$1" pin="~AD12(PDMCLK/TX1)" pad="15"/>
+<connect gate="G$1" pin="~AD13(I2SBCLK/RX1)" pad="16"/>
+<connect gate="G$1" pin="~AD29(PDMDATA)" pad="18"/>
+<connect gate="G$1" pin="~AD31(SCCCLK)" pad="23"/>
+<connect gate="G$1" pin="~AD32(SCCIO)" pad="13"/>
+<connect gate="G$1" pin="~AD35(TX1/I2SDAT/PDMCLK)" pad="8"/>
+<connect gate="G$1" pin="~BOOT(MOSI5/RX1/32KHZ)" pad="4"/>
+<connect gate="G$1" pin="~D48(TX0/SCL5/SCK5)" pad="5"/>
+<connect gate="G$1" pin="~D49(RX0/SDA5/MISO5)" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2133,6 +2309,10 @@ type 0207, grid 10 mm</description>
 <part name="R4" library="LinnesLab-Passives" deviceset="RESISTOR" device="0603"/>
 <part name="GND9" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="LinnesLab-Symbols" deviceset="VLIPO" device=""/>
+<part name="U$1" library="LinnesLab-Sensors" deviceset="LSM6DS3_CAST" device=""/>
+<part name="U1" library="LinnesLab-Microcontrollers" deviceset="ARTEMIS.CAST" device=""/>
+<part name="SUPPLY6" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
+<part name="GND10" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2212,7 +2392,7 @@ type 0207, grid 10 mm</description>
 <attribute name="VALUE" x="71.12" y="-0.254" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="149.86" y="53.34" smashed="yes">
-<attribute name="VALUE" x="149.86" y="56.134" size="1.778" layer="96" align="bottom-center"/>
+<attribute name="VALUE" x="149.86" y="55.88" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="73.66" y="25.4" smashed="yes">
 <attribute name="VALUE" x="73.66" y="28.194" size="1.778" layer="96" align="bottom-center"/>
@@ -2236,6 +2416,20 @@ type 0207, grid 10 mm</description>
 </instance>
 <instance part="SUPPLY4" gate="G$1" x="162.56" y="48.26" smashed="yes">
 <attribute name="VALUE" x="162.56" y="51.054" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="U$1" gate="G$1" x="195.58" y="50.8" smashed="yes">
+<attribute name="NAME" x="187.96" y="55.88" size="1.778" layer="95"/>
+<attribute name="VALUE" x="187.96" y="43.18" size="1.778" layer="96"/>
+</instance>
+<instance part="U1" gate="G$1" x="208.28" y="-5.08" smashed="yes">
+<attribute name="NAME" x="177.8" y="36.068" size="1.778" layer="95"/>
+<attribute name="VALUE" x="177.8" y="-53.34" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY6" gate="G$1" x="175.26" y="60.96" smashed="yes">
+<attribute name="VALUE" x="175.26" y="63.754" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND10" gate="G$1" x="177.8" y="43.18" smashed="yes">
+<attribute name="VALUE" x="177.8" y="42.926" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -2308,6 +2502,12 @@ type 0207, grid 10 mm</description>
 <pinref part="GND9" gate="G$1" pin="GND"/>
 <wire x1="162.56" y1="20.32" x2="162.56" y2="17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="182.88" y1="53.34" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="53.34" x2="177.8" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="G$1" pin="GND"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -2318,6 +2518,12 @@ type 0207, grid 10 mm</description>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 <wire x1="149.86" y1="48.26" x2="149.86" y2="53.34" width="0.1524" layer="91"/>
 <junction x="149.86" y="48.26"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<wire x1="182.88" y1="48.26" x2="175.26" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="48.26" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="VLIPO" class="0">
@@ -2410,6 +2616,20 @@ type 0207, grid 10 mm</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="30.48" x2="162.56" y2="35.56" width="0.1524" layer="91"/>
 <label x="162.56" y="33.02" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SDA"/>
+<wire x1="208.28" y1="53.34" x2="215.9" y2="53.34" width="0.1524" layer="91"/>
+<label x="215.9" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCLA" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SCL"/>
+<wire x1="208.28" y1="48.26" x2="215.9" y2="48.26" width="0.1524" layer="91"/>
+<label x="215.9" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
