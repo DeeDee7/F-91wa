@@ -8,3 +8,17 @@ to save work to github, follow these steps
   this commits the changes you made to the system along with a message
 4. git push
   this pushes the changes to the github website to be saved
+------------------
+Notes from Week 4
+Relevant pins on an accelerometer
+ - VCC, GND, SCL, SDA
+  - SCL and SDA are ICC whic hare digital interfaces
+  - ADC 0-1023
+    - analog to digital conversations
+    - 0-2V
+    - 10 bits is 2^10 which is 0-1023
+    
+Accel VCC - 3.3 V Arduino
+  - GND - GND
+  - SCL - SCL
+  - SDA - SDA
