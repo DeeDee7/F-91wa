@@ -27,10 +27,23 @@ Accel VCC - 3.3 V Arduino
 Features
   - Core
     - Time 12/24 hr
+      - 1a button sets 
+      - 1b button changes hour
+      - 1c button changes minutes
+      - 1d button changes seconds
     - date/day of the week
+      - 1a button sets
+      - 1b button changes date
+      - 1c button changes day
     - alarm clock
+      - 1a button sets
+      - 1b button changes hour
+      - 1c button changes minutes
+      - 1d button changes seconds
     - stopwatch
-    - use buttons to move aroudn menus
+      - 1a button starts/stops
+      - 1b button laps
+    - use buttons to move around menus
   - neat stuff
     - Temperature sensor
     - speaker/vibration
