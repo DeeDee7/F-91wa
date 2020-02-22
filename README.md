@@ -22,3 +22,15 @@ Accel VCC - 3.3 V Arduino
   - GND - GND
   - SCL - SCL
   - SDA - SDA
+
+-------------------
+Features
+  - Core
+    - Time 12/24 hr
+    - date/day of the week
+    - alarm clock
+    - stopwatch
+    - use buttons to move aroudn menus
+  - neat stuff
+    - Temperature sensor
+    - speaker/vibration
