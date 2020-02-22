@@ -43,7 +43,7 @@ Features
     - stopwatch
       - 1a button starts/stops
       - 1b button laps
-    - use buttons to move around menus
-  - neat stuff
-    - Temperature sensor
+    - use 1b button to move around menus
+  - Additionally Functionality
+    - Temperature and Humidity Sensor
     - speaker/vibration
