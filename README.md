@@ -47,3 +47,7 @@ Features
   - Additionally Functionality
     - Temperature and Humidity Sensor
     - speaker/vibration
+-----------------------
+Some potentially useful links
+1. https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/
+2. 
